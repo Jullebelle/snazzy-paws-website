@@ -1,0 +1,271 @@
+/* ========= Global styles ========= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #2C2D26;
+  line-height: 1.6;
+}
+
+/* ========= Header ========= */
+header {
+  background-color: #D29232;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+}
+
+/* Smaller tagline line under main title */
+.slogan {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
+.logo {
+  height: 140px;
+  margin-right: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  color: #2C2D26;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+}
+
+/* ========= Navigation ========= */
+nav {
+  background-color: #2C2D26;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background-color: #2897B0;
+}
+
+/* ========= Main content / hero image ========= */
+main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #2C2D26;
+}
+
+/* ========= Buttons (global) ========= */
+button {
+  background-color: #2C2D26;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2897B0;
+}
+
+/* ========= Footer ========= */
+footer {
+  text-align: center;
+  background-color: #C3C0B6;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* ========= Tables (services page) ========= */
+table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 700px;
+}
+
+th, td {
+  border: 1px solid #2C2D26;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #D29232;
+  color: #2C2D26;
+}
+
+tr:nth-child(even) {
+  background-color: #F5F2EC;
+}
+
+/* ========= Services grid ========= */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.service-block {
+  background-color: #F5F2EC;
+  border: 1px solid #C3C0B6;
+  padding: 1rem;
+  width: 45%; /* two blocks per row on larger screens */
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.service-block h3 {
+  margin-top: 0;
+  color: #2C2D26;
+}
+
+/* ========= Gallery grid ========= */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.gallery-grid img {
+  width: 22%;   /* roughly four images per row */
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+/* ========= Booking form ========= */
+.booking-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #F5F2EC;
+  border: 1px solid #C3C0B6;
+  border-radius: 5px;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #2C2D26;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #C3C0B6;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.booking-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #C3C0B6;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.booking-form button {
+  margin-top: 1.5rem;
+  background-color: #2C2D26;
+  color: white;
+  padding: 0.75rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: #2897B0;
+}
+
+/* ========= Contact page grid ========= */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+/* Individual contact boxes */
+.contact-box {
+  background-color: #F5F2EC;
+  border: 1px solid #C3C0B6;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 45%; /* two boxes per row on larger screens */
+  box-sizing: border-box;
+}
+
+.contact-box h3 {
+  margin-top: 0;
+  color: #2C2D26;
+  text-align: center;
+}
+
+/* Links inside contact boxes */
+.contact-box a {
+  color: #2897B0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+/* Contact form inside box (remove extra styling) */
+.contact-box .contact-form {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ========= Social media icons ========= */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+.social-icons a:hover img {
+  opacity: 0.5;
+}

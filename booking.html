@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snazzy Paws Grooming – Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" alt="Snazzy Paws Grooming logo" class="logo">
+  <h1>Snazzy Paws Grooming</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Booking</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+<h2>Booking Form</h2>
+
+<form class="booking-form">
+
+  <label for="owner">Owner's Name:</label>
+  <input type="text" id="owner" name="owner" required>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="dog-name">Dog's Name:</label>
+  <input type="text" id="dog-name" name="dog-name" required>
+
+  <label for="breed">Dog's Breed:</label>
+  <input type="text" id="breed" name="breed">
+
+  <label for="age">Dog's Age:</label>
+  <input type="number" id="age" name="age" min="0">
+
+  <label for="service">Service Required:</label>
+<select id="service" name="service" required>
+  <option value="">-- Please select --</option>
+  <option value="bath-brush">Bath and Brush</option>
+  <option value="haircut">Haircut</option>
+  <option value="full-groom">Full Grooming Package</option>
+  <option value="spa">Spa Package</option>
+  <option value="puppy">Puppy Package</option>
+  <option value="senior">Senior Dog Package</option>
+  <option value="nail-trim">Nail Trim</option>
+  <option value="ear-clean">Ear Cleaning</option>
+  <option value="teeth-brush">Teeth Brushing</option>
+  <option value="deshedding">De-shedding Treatment</option>
+  <option value="flea-tick">Flea & Tick Treatment</option>
+  <option value="express">Express Service</option>
+  <option value="medicated-bath">Medicated Bath</option>
+  <option value="special-breed">Special Breed Cut</option>
+</select>
+
+  <button type="submit">Submit Booking</button>
+
+</form>
+
+</main>
+
+<footer>
+  <p>Opening hours: Mon–Fri 9am–6pm, Sat 10am–4pm, Sun closed</p>
+</footer>
+
+</body>
+</html>
